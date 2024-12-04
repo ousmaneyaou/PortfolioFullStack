@@ -1,0 +1,149 @@
+/* Styles Globaux */
+.header {
+    border-radius: 6px;
+    background-color: #001F3F; /* Bleu foncé */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .couleurDeNav{
+    background: #004080;
+    transition: 0.5s;
+}
+  
+  /* Conteneur Principal */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .nav__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav__logo:hover {
+    color: #f39c12; /* Orange */
+  }
+  
+  /* Menu Principal */
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Caché par défaut sur mobile */
+    width: 70%;
+    height: 100%;
+    background-color: #001F3F;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 1.5rem;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .nav__menu.show {
+    right: 0; /* Affiche le menu */
+  }
+  
+  /* Liste des Liens */
+  .nav__list {
+    display: flex;
+    flex-direction: column; /* Colonne par défaut pour mobile */
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Liens de Navigation */
+  .nav__item {
+    font-size: 1.2rem;
+  }
+  
+  .nav__link {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+  }
+  
+  .nav__link:hover {
+    color: #f39c12; /* Orange */
+    transform: translateY(-3px); /* Légère animation au survol */
+  }
+  
+  /* Icônes */
+  .nav__icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Bouton de Fermeture */
+  .nav__close {
+    align-self: flex-end;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav__close:hover {
+    transform: rotate(90deg); /* Effet de rotation */
+  }
+  
+  /* Bouton Toggle */
+  .nav__toggle {
+    display: block; /* Visible uniquement sur mobile */
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .nav__toggle:hover {
+    transform: scale(1.1); /* Légère animation au survol */
+  }
+  
+  /* Responsive Design */
+  @media screen and (min-width: 768px) {
+    .nav__menu {
+      position: static;
+      display: flex;
+      flex-direction: row; /* Alignement horizontal sur bureau */
+      gap: 2rem;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+      height: auto;
+      right: 0;
+    }
+  
+    .nav__list {
+      flex-direction: row; /* Alignement horizontal des liens */
+    }
+  
+    .nav__toggle {
+      display: none; /* Caché sur bureau */
+    }
+  
+    .nav__close {
+      display: none; /* Caché sur bureau */
+    }
+  }
+  

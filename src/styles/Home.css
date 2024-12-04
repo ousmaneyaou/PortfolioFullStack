@@ -1,0 +1,148 @@
+/* Conteneur Principal */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    background: linear-gradient(135deg, #011d39 50%, #004080  50%);
+  }
+  
+  .home__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Social, texte, photo */
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    color: #FFFFFF; 
+    margin-top: -50px;
+  }
+  
+  /* Icônes Réseaux Sociaux à Gauche */
+  .home__social {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .home__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #001F3F;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .home__social-link:hover {
+    background-color: #f39c12;
+    color: #FFFFFF;
+    transform: scale(1.1);
+  }
+  
+  /* Texte au Centre */
+  .data {
+    text-align: center;
+  }
+  
+  .data__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF; /* Texte blanc */
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  /* Animation pour l'emoji "👋" */
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  .data__subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #F5F5F5; /* Gris clair */
+    margin-bottom: 1rem;
+  }
+  
+  .data__description {
+    font-size: 1rem;
+    color: #E0E0E0; /* Gris très clair */
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  /* Bouton */
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    /* background: linear-gradient(135deg, #004080 50%, #001F3F 50%); */
+    background-color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background-color: #f39c12;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+  }
+  
+  /* Photo à Droite */
+  .home__img {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .home__img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6); /* Halo lumineux par défaut */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Ajout de transition pour les lumières */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.8), 0 0 30px 10px rgba(2, 229, 237, 0.895);
+  }
+  
+  .home__img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px #f39c12, 0 0 30px 10px #f39c12;
+ /* Halo lumineux intense au survol */
+  }
+    
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .home__container {
+      grid-template-columns: 1fr; /* Une colonne sur mobile */
+      gap: 1.5rem;
+    }
+  
+    .home__social {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  
