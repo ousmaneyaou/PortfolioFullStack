@@ -1,0 +1,115 @@
+/* Conteneur Principal */
+.projets {
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #001f3f, #004080); /* Transition élégante de couleurs */
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Titre de la Section */
+  .projets__title {
+    margin-bottom: 3rem;
+  }
+  
+  .projets__title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f39c12; /* Couleur accent pour le titre */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Réduction de l'espacement entre les lettres */
+    position: relative;
+    display: inline-block;
+  }
+  .projets__title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* Réduction de la largeur */
+    height: 2px; /* Réduction de la hauteur */
+    background-color: #f39c12;
+    border-radius: 2px;
+  }
+  
+  .projets__title p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    margin-top: 0.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Conteneur des Projets */
+  .projets__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Responsive pour toutes les tailles */
+    gap: 1.5rem; /* Espacement entre les cartes */
+    margin-top: 2rem;
+    padding: 0px 150px;
+  }
+  
+  /* Carte de Projet */
+  .projets__card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre subtile */
+    background: #011d39; /* Fond sombre pour contraste */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .projets__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit complètement la carte */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .projets__card:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+    box-shadow: 0 0 5px 5px rgba(2, 229, 237, 0.895), 0 0 30px 10px rgba(2, 229, 237, 0.895);
+
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .projets__card img:hover {
+   /* transform: scale(1.1);  Zoom de l'image au survol */
+  }
+  
+  /* Bouton Voir Plus */
+  .projets__showmore {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f39c12;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .projets__showmore i {
+    font-size: 1.5rem;
+  }
+  
+  .projets__showmore:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .projets__title h1 {
+      font-size: 2rem; /* Réduction de la taille du titre sur mobile */
+    }
+  
+    .projets__container {
+      gap: 1rem; /* Réduction de l'espacement entre les cartes */
+    }
+  }
+  

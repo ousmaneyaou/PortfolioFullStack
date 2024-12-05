@@ -60,16 +60,6 @@
     position: relative;
   }
   
-  /* Animation pour l'emoji "👋" */
-  @keyframes wave {
-    0%, 100% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(15deg);
-    }
-  }
-  
   .data__subtitle {
     font-size: 1.5rem;
     font-weight: 500;
