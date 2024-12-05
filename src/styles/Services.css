@@ -10,20 +10,24 @@
   }
   
   /* Titre et Sous-titre */
-  .sections__tittle {
-    text-align: center;
-    font-size: 2rem; /* Réduction de la taille de police */
-    font-weight: bold;
-    color: #f39c12;
-    margin-bottom: 1rem; /* Réduction de l'espacement */
-  }
-  
-  .sections__tittle h1 {
+  .about__title h1 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1.5px; /* Réduction de l'espacement entre les lettres */
     position: relative;
     display: inline-block;
+  }
+  
+  .about__title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px; /* Réduction de la largeur */
+    height: 2px; /* Réduction de la hauteur */
+    background-color: #f39c12;
+    border-radius: 2px;
   }
   .sections__tittle h1::after {
     content: "";
@@ -180,6 +184,39 @@
     font-size: 1rem;
     color: #ffffff;
   }
+  
+
+
+  .services__modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #001f3f;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 92%;
+    height: 400px;
+    max-width: 500px;
+  }
+  
+  .active-modal {
+    display: block;
+  }
+  
+  .services__modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #f39c12;
+    cursor: pointer;
+  }
+  
+
   
   /* Responsive Design */
   @media screen and (max-width: 768px) {
