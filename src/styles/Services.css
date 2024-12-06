@@ -1,7 +1,7 @@
 /* Section Principale */
 .service {
     padding: 2rem 1rem;
-    background: linear-gradient(135deg, #011d39, #004080);
+    background: linear-gradient(135deg, #011d39, #011d39);
     color: #ffffff;
     display: flex;
     flex-direction: column;
