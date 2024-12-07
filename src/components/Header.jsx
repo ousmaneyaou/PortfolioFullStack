@@ -1,21 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
+import { Link } from "react-scroll"; // Import de `react-scroll` pour un scrolling fluide
 
 const Header = () => {
-   // Fonction pour gérer l'ouverture/fermeture du menu
+  // Gestion du menu
   const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
-  //scroll nav bar
-  const [couleur, setCouleur] = useState(false)
+  // Gestion de la couleur de la barre de navigation lors du scroll
+  const [couleur, setCouleur] = useState(false);
   useEffect(() => {
-  window.addEventListener('scroll', () => {
-      window.scrollY > 720 ? setCouleur(true) : setCouleur(false)
-  })
-  }, [])
-  //scroll nav bar
+    const handleScroll = () => {
+      setCouleur(window.scrollY > 720);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll); // Nettoyage
+  }, []);
 
   return (
     <header className={`header ${couleur ? "couleurDeNav" : ""}`}>
@@ -28,34 +31,64 @@ const Header = () => {
         <div className={`nav__menu ${isMenuOpen ? "show" : ""}`}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a href="#home" className="nav__link">
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                offset={-222}
+                className="nav__link"
+                onClick={toggleMenu}
+              >
                 <i className="uil uil-estate nav__icon"></i> Home
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#about" className="nav__link">
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-40}
+                className="nav__link"
+                onClick={toggleMenu}
+              >
                 <i className="uil uil-user nav__icon"></i> About
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#services" className="nav__link">
+              <Link
+                to="services"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="nav__link"
+                onClick={toggleMenu}
+              >
                 <i className="uil uil-briefcase-alt nav__icon"></i> Services
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#portfolio" className="nav__link">
+              <Link
+                to="projets"
+                smooth={true}
+                duration={500}
+                offset={-20}
+                className="nav__link"
+                onClick={toggleMenu}
+              >
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
+              </Link>
             </li>
             <li className="nav__item">
-              <a href="#contact" className="nav__link">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-100}
+                className="nav__link"
+                onClick={toggleMenu}
+              >
                 <i className="uil uil-message nav__icon"></i> Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <i className="uil uil-times nav__close" onClick={toggleMenu}></i>

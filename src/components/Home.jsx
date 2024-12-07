@@ -5,7 +5,7 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <section className="home">
-      <div className="home__container">
+      <div id='home' className="home__container">
         {/* Réseaux sociaux à gauche */}
         <div className="home__social">
           <a

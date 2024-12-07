@@ -32,7 +32,7 @@ const Contacts = () => {
       }
     };
   return (
-    <div className='contact'>
+    <div id='contact' className='contact'>
       <div className="contact-col">
         <h3>envoyez-nous un message <img src={iconmessage} alt="" /></h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 

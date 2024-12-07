@@ -9,7 +9,7 @@ import "../styles/Projets.css";
 
 const Projet = () => {
   return (
-    <section className="projets">
+    <section id='section' className="projets">
       <div className="projets__title">
         <h1>My Latest Work</h1>
         <p>Découvrez quelques-uns de mes projets récents conçus avec précision et créativité.</p>
