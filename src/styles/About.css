@@ -80,6 +80,7 @@
   font-size: 0.9rem; /* Réduction de la taille de police */
   line-height: 1.4; /* Réduction de l'interligne */
   color: #e0e0e0;
+  text-align: justify;
 }
 
 /* Skills */

@@ -70,9 +70,8 @@
   }
   
   .projets__card:hover {
-    transform: scale(1.05); /* Zoom léger au survol */
+    transform: scale(1.05);
     box-shadow: 0 0 5px 5px rgba(2, 229, 237, 0.895), 0 0 30px 10px rgba(2, 229, 237, 0.895);
-
     transition: 0.3s;
     border-radius: 10px;
   }

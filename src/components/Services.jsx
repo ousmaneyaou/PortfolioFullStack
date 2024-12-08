@@ -46,7 +46,7 @@ const Services = () => {
               ></i>
               <h3 className="services_modal-tittle">Product Designer</h3>
               <p className="services_modal-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vitae saepe sunt dignissimos possimus molestias ad!
+                Je conçois et développe des produits numériques innovants, en mettant l'accent sur la fonctionnalité, l'expérience utilisateur et l'impact visuel. Mon objectif est de transformer des idées complexes en solutions simples et efficaces qui répondent aux besoins des utilisateurs et des entreprises.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
@@ -92,7 +92,7 @@ const Services = () => {
               ></i>
               <h3 className="services_modal-tittle">UI/UX Designer</h3>
               <p className="services_modal-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vitae saepe sunt dignissimos possimus molestias ad!
+              Je conçois des expériences utilisateur uniques et intuitives en alliant esthétique et fonctionnalité. Mon objectif est d'optimiser la satisfaction utilisateur tout en répondant aux besoins des entreprises grâce à des solutions créatives et performantes.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
@@ -138,7 +138,7 @@ const Services = () => {
               ></i>
               <h3 className="services_modal-tittle">Visual Designer</h3>
               <p className="services_modal-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor vitae saepe sunt dignissimos possimus molestias ad!
+              Avec une année d'expérience en développement web et une passion pour la conception visuelle, je crée des designs modernes et intuitifs qui captivent les utilisateurs. Je combine créativité et expertise technique pour transformer les idées en interfaces esthétiques et fonctionnelles.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">

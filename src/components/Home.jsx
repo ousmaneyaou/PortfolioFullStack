@@ -9,7 +9,7 @@ const Home = () => {
         {/* Réseaux sociaux à gauche */}
         <div className="home__social">
           <a
-            href="https://www.instagram.com"
+            href="instagram"
             className="home__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -17,7 +17,7 @@ const Home = () => {
             <i className="uil uil-instagram"></i>
           </a>
           <a
-            href="https://dribbble.com"
+            href="http://localhost:3001/home"
             className="home__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,7 +25,7 @@ const Home = () => {
             <i className="uil uil-dribbble"></i>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/ousmaneyaou?tab=repositories"
             className="home__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,7 +33,7 @@ const Home = () => {
             <i className="uil uil-github-alt"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/your-profile" /* Remplacez "your-profile" par votre identifiant LinkedIn */
+            href="https://www.linkedin.com/in/YaouSouleyOusmane/" /* Remplacez "your-profile" par votre identifiant LinkedIn */
             className="home__social-link"
             target="_blank"
             rel="noopener noreferrer"

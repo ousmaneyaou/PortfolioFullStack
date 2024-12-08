@@ -35,9 +35,7 @@ const Contacts = () => {
     <div id='contact' className='contact'>
       <div className="contact-col">
         <h3>envoyez-nous un message <img src={iconmessage} alt="" /></h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Velit explicabo nihil quod repudiandae tenetur doloremque earum quaerat minima, 
-            dolor ipsum vitae. Quos repellat voluptatem explicabo!
+        <p>Je suis toujours enthousiaste à l'idée de collaborer sur des projets innovants et de relever de nouveaux défis. Que ce soit pour discuter de vos besoins en développement Full Stack, échanger autour de vos idées ou explorer des opportunités de collaboration, n'hésitez pas à me laisser un message. Je me ferai un plaisir de vous répondre rapidement !
         </p>
         <ul>
             <li><img src={iconemail} alt="" />Ousmaneyaou00@gmail.com</li>
