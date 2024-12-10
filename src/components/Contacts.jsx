@@ -46,7 +46,7 @@ const Contacts = () => {
       <div className="contact-col">
         <form onSubmit={onSubmit}>
             <label>Votre nom</label>
-            <input type="text" name='name' placeholder='Votre nom...' required/>
+            <input type="email" name='email' placeholder='Votre email...' required/>
             <label>Telephone</label>
             <input type="tel" name='tel' placeholder='Votre numero...' required/>
             <label>Votre messages</label>
